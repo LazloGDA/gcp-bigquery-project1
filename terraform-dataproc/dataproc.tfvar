@@ -1,0 +1,6 @@
+project          = "gcp-bigquery-project1"
+name             = "project1-cluster"
+region           = "europe-west3"
+staging_bucket   = "gcp-bigquery-project1-bucket"
+machine_type     = "n2-standard-4"
+boot_disk_type   = "pd-standard"
