@@ -1,0 +1,3 @@
+project          = "gcp-bigquery-project1"
+name             = "gcp-bigquery-project1-bucket"
+location         = "europe-west3"

@@ -1,3 +1,0 @@
-project          = "de0360-sbx-de-train-env"
-name             = "de0360-sbx-de-train-env-bigquery-bucket"
-location         = "EUROPE-WEST3"

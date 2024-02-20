@@ -1,3 +1,0 @@
-project          = "gcp-bigquery-3"
-name             = "gcp-bigquery-3-bigquery-bucket"
-location         = "EUROPE-WEST3"

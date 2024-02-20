@@ -1,6 +1,0 @@
-project          = "de0360-sbx-de-train-env"
-name             = "bigquery-cluster"
-region           = "europe-west3"
-staging_bucket   = "?"
-machine_type     = "n1-standard-1"
-boot_disk_type   = "pd-ssd"
