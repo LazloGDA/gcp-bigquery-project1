@@ -10,6 +10,7 @@ variable boot_disk_type {}
 resource "google_dataproc_cluster" "small_cluster" {
   project = var.project
   name    = var.name
+  provider = google-beta
   region  = var.region
   
   cluster_config {
@@ -20,6 +21,8 @@ resource "google_dataproc_cluster" "small_cluster" {
       disk_config {
         boot_disk_type = var.boot_disk_type
       }
+    
+    
     }
   
     # Advanced Spark optimizations (without caching)
@@ -31,8 +34,11 @@ resource "google_dataproc_cluster" "small_cluster" {
         "spark:enableAdvancedExecutionLayer"   = "true"
         "spark:enableCaching"                  = "false"
       }
-    }  
     }
+    endpoint_config {
+      enable_http_port_access = "true"
+    }
+  }
 }
 
 # END the Dataproc cluster configuration
