@@ -31,13 +31,25 @@ resource "google_dataproc_cluster" "small_cluster" {
       machine_type = var.machine_type
       disk_config {
         boot_disk_type = var.boot_disk_type
+        boot_disk_size_gb = 500
+      }    
+    }
+    worker_config {
+      num_instances    = 2
+      machine_type     = var.machine_type
+      disk_config {
+        boot_disk_type = var.boot_disk_type
+        boot_disk_size_gb = 500
       }
-    
-    
+    }
+
+    preemptible_worker_config {
+      num_instances = 0
     }
   
     # Advanced Spark optimizations (without caching)
     software_config {
+      image_version = "2.0-debian10"
       optional_components = [ "JUPYTER" ]
       override_properties = {
         "dataproc:dataproc.allow.zero.workers" = "true"
@@ -50,14 +62,16 @@ resource "google_dataproc_cluster" "small_cluster" {
       enable_http_port_access = "true"
     }
     initialization_action {
-    script = "gs://goog-dataproc-initialization-actions-europe-west3/connectors/connectors.sh"
+    script = "gs://goog-dataproc-initialization-actions-${var.region}/connectors/connectors.sh"
     timeout_sec = 500
     }
+#    initialization_action {
+#    script = "gs://goog-dataproc-initialization-actions-${var.region}/cloud-sql-proxy/cloud-sql-proxy.sh"
+#    timeout_sec = 500
+#    }
     gce_cluster_config {
       metadata = {
-        bigquery-connector-version="1.2.0"
-        spark-bigquery-connector-version="0.21.0"
-        hive-bigquery-connector-version="2.0.3"
+        spark-bigquery-connector-version="0.36.1"
       }
     }
 
