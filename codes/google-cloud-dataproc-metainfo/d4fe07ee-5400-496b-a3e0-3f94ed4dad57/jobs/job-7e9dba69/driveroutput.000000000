@@ -1,0 +1,112 @@
+Warning: Ignoring non-Spark config property: enableAdvancedOptimizations
+Warning: Ignoring non-Spark config property: enableCaching
+Warning: Ignoring non-Spark config property: enableAdvancedExecutionLayer
+24/02/21 16:34:38 INFO org.apache.spark.SparkEnv: Registering MapOutputTracker
+24/02/21 16:34:38 INFO org.apache.spark.SparkEnv: Registering BlockManagerMaster
+24/02/21 16:34:38 INFO org.apache.spark.SparkEnv: Registering BlockManagerMasterHeartbeat
+24/02/21 16:34:38 INFO org.apache.spark.SparkEnv: Registering OutputCommitCoordinator
+24/02/21 16:34:38 INFO org.sparkproject.jetty.util.log: Logging initialized @6498ms to org.sparkproject.jetty.util.log.Slf4jLog
+24/02/21 16:34:39 INFO org.sparkproject.jetty.server.Server: jetty-9.4.40.v20210413; built: 2021-04-13T20:42:42.668Z; git: b881a572662e1943a14ae12e7e1207989f218b74; jvm 1.8.0_402-b06
+24/02/21 16:34:39 INFO org.sparkproject.jetty.server.Server: Started @6731ms
+24/02/21 16:34:39 INFO org.sparkproject.jetty.server.AbstractConnector: Started ServerConnector@27179cab{HTTP/1.1, (http/1.1)}{0.0.0.0:46867}
+24/02/21 16:34:40 INFO org.apache.hadoop.yarn.client.RMProxy: Connecting to ResourceManager at project1-cluster-m/10.156.0.10:8032
+24/02/21 16:34:40 INFO org.apache.hadoop.yarn.client.AHSProxy: Connecting to Application History server at project1-cluster-m/10.156.0.10:10200
+24/02/21 16:34:42 INFO org.apache.hadoop.conf.Configuration: resource-types.xml not found
+24/02/21 16:34:42 INFO org.apache.hadoop.yarn.util.resource.ResourceUtils: Unable to find 'resource-types.xml'.
+24/02/21 16:34:43 INFO org.apache.hadoop.yarn.client.api.impl.YarnClientImpl: Submitted application application_1708531161196_0003
+24/02/21 16:34:44 INFO org.apache.hadoop.yarn.client.RMProxy: Connecting to ResourceManager at project1-cluster-m/10.156.0.10:8030
+24/02/21 16:34:46 INFO com.google.cloud.hadoop.fs.gcs.GhfsStorageStatistics: Detected potential high latency for operation op_get_file_status. latencyMs=302; previousMaxLatencyMs=0; operationCount=1; context=gs://dataproc-temp-europe-west3-671384469824-mghpndlt/d4fe07ee-5400-496b-a3e0-3f94ed4dad57/spark-job-history
+24/02/21 16:34:47 INFO com.google.cloud.hadoop.repackaged.gcs.com.google.cloud.hadoop.gcsio.GoogleCloudStorageImpl: Ignoring exception of type GoogleJsonResponseException; verified object already exists with desired state.
+24/02/21 16:34:53 INFO org.sparkproject.jetty.server.AbstractConnector: Stopped Spark@27179cab{HTTP/1.1, (http/1.1)}{0.0.0.0:0}
+Traceback (most recent call last):
+  File "/tmp/job-7e9dba69/test_data_transformation.py", line 39, in <module>
+    df = spark.read.csv(path, header=True, inferSchema=True, sep=",")
+  File "/usr/lib/spark/python/lib/pyspark.zip/pyspark/sql/readwriter.py", line 737, in csv
+  File "/usr/lib/spark/python/lib/py4j-0.10.9-src.zip/py4j/java_gateway.py", line 1304, in __call__
+  File "/usr/lib/spark/python/lib/pyspark.zip/pyspark/sql/utils.py", line 111, in deco
+  File "/usr/lib/spark/python/lib/py4j-0.10.9-src.zip/py4j/protocol.py", line 326, in get_return_value
+py4j.protocol.Py4JJavaError: An error occurred while calling o67.csv.
+: java.lang.IllegalStateException: Cannot call methods on a stopped SparkContext.
+This stopped SparkContext was created at:
+
+org.apache.spark.api.java.JavaSparkContext.<init>(JavaSparkContext.scala:58)
+sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+py4j.reflection.MethodInvoker.invoke(MethodInvoker.java:247)
+py4j.reflection.ReflectionEngine.invoke(ReflectionEngine.java:357)
+py4j.Gateway.invoke(Gateway.java:238)
+py4j.commands.ConstructorCommand.invokeConstructor(ConstructorCommand.java:80)
+py4j.commands.ConstructorCommand.execute(ConstructorCommand.java:69)
+py4j.GatewayConnection.run(GatewayConnection.java:238)
+java.lang.Thread.run(Thread.java:750)
+
+The currently active SparkContext was created at:
+
+(No active SparkContext.)
+         
+	at org.apache.spark.SparkContext.assertNotStopped(SparkContext.scala:118)
+	at org.apache.spark.SparkContext.broadcast(SparkContext.scala:1514)
+	at org.apache.spark.sql.execution.datasources.text.TextFileFormat.buildReader(TextFileFormat.scala:106)
+	at org.apache.spark.sql.execution.datasources.FileFormat.buildReaderWithPartitionValues(FileFormat.scala:130)
+	at org.apache.spark.sql.execution.datasources.FileFormat.buildReaderWithPartitionValues$(FileFormat.scala:121)
+	at org.apache.spark.sql.execution.datasources.TextBasedFileFormat.buildReaderWithPartitionValues(FileFormat.scala:170)
+	at org.apache.spark.sql.execution.FileSourceScanExec.inputRDD$lzycompute(DataSourceScanExec.scala:408)
+	at org.apache.spark.sql.execution.FileSourceScanExec.inputRDD(DataSourceScanExec.scala:399)
+	at org.apache.spark.sql.execution.FileSourceScanExec.doExecute(DataSourceScanExec.scala:497)
+	at org.apache.spark.sql.execution.SparkPlan.$anonfun$execute$1(SparkPlan.scala:180)
+	at org.apache.spark.sql.execution.SparkPlan.$anonfun$executeQuery$1(SparkPlan.scala:218)
+	at org.apache.spark.rdd.RDDOperationScope$.withScope(RDDOperationScope.scala:151)
+	at org.apache.spark.sql.execution.SparkPlan.executeQuery(SparkPlan.scala:215)
+	at org.apache.spark.sql.execution.SparkPlan.execute(SparkPlan.scala:176)
+	at org.apache.spark.sql.execution.InputAdapter.inputRDD(WholeStageCodegenExec.scala:525)
+	at org.apache.spark.sql.execution.InputRDDCodegen.inputRDDs(WholeStageCodegenExec.scala:453)
+	at org.apache.spark.sql.execution.InputRDDCodegen.inputRDDs$(WholeStageCodegenExec.scala:452)
+	at org.apache.spark.sql.execution.InputAdapter.inputRDDs(WholeStageCodegenExec.scala:496)
+	at org.apache.spark.sql.execution.FilterExec.inputRDDs(basicPhysicalOperators.scala:149)
+	at org.apache.spark.sql.execution.WholeStageCodegenExec.doExecute(WholeStageCodegenExec.scala:746)
+	at org.apache.spark.sql.execution.SparkPlan.$anonfun$execute$1(SparkPlan.scala:180)
+	at org.apache.spark.sql.execution.SparkPlan.$anonfun$executeQuery$1(SparkPlan.scala:218)
+	at org.apache.spark.rdd.RDDOperationScope$.withScope(RDDOperationScope.scala:151)
+	at org.apache.spark.sql.execution.SparkPlan.executeQuery(SparkPlan.scala:215)
+	at org.apache.spark.sql.execution.SparkPlan.execute(SparkPlan.scala:176)
+	at org.apache.spark.sql.execution.SparkPlan.getByteArrayRdd(SparkPlan.scala:321)
+	at org.apache.spark.sql.execution.SparkPlan.executeTake(SparkPlan.scala:439)
+	at org.apache.spark.sql.execution.SparkPlan.executeTake(SparkPlan.scala:425)
+	at org.apache.spark.sql.execution.CollectLimitExec.executeCollect(limit.scala:47)
+	at org.apache.spark.sql.Dataset.collectFromPlan(Dataset.scala:3709)
+	at org.apache.spark.sql.Dataset.$anonfun$head$1(Dataset.scala:2735)
+	at org.apache.spark.sql.Dataset.$anonfun$withAction$1(Dataset.scala:3700)
+	at org.apache.spark.sql.execution.SQLExecution$.$anonfun$withNewExecutionId$5(SQLExecution.scala:103)
+	at org.apache.spark.sql.execution.SQLExecution$.withSQLConfPropagated(SQLExecution.scala:163)
+	at org.apache.spark.sql.execution.SQLExecution$.$anonfun$withNewExecutionId$1(SQLExecution.scala:90)
+	at org.apache.spark.sql.SparkSession.withActive(SparkSession.scala:775)
+	at org.apache.spark.sql.execution.SQLExecution$.withNewExecutionId(SQLExecution.scala:64)
+	at org.apache.spark.sql.Dataset.withAction(Dataset.scala:3698)
+	at org.apache.spark.sql.Dataset.head(Dataset.scala:2735)
+	at org.apache.spark.sql.Dataset.take(Dataset.scala:2942)
+	at org.apache.spark.sql.execution.datasources.csv.TextInputCSVDataSource$.infer(CSVDataSource.scala:112)
+	at org.apache.spark.sql.execution.datasources.csv.CSVDataSource.inferSchema(CSVDataSource.scala:65)
+	at org.apache.spark.sql.execution.datasources.csv.CSVFileFormat.inferSchema(CSVFileFormat.scala:62)
+	at org.apache.spark.sql.execution.datasources.DataSource.$anonfun$getOrInferFileFormatSchema$11(DataSource.scala:209)
+	at scala.Option.orElse(Option.scala:447)
+	at org.apache.spark.sql.execution.datasources.DataSource.getOrInferFileFormatSchema(DataSource.scala:206)
+	at org.apache.spark.sql.execution.datasources.DataSource.resolveRelation(DataSource.scala:419)
+	at org.apache.spark.sql.DataFrameReader.loadV1Source(DataFrameReader.scala:325)
+	at org.apache.spark.sql.DataFrameReader.$anonfun$load$3(DataFrameReader.scala:307)
+	at scala.Option.getOrElse(Option.scala:189)
+	at org.apache.spark.sql.DataFrameReader.load(DataFrameReader.scala:307)
+	at org.apache.spark.sql.DataFrameReader.csv(DataFrameReader.scala:795)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at py4j.reflection.MethodInvoker.invoke(MethodInvoker.java:244)
+	at py4j.reflection.ReflectionEngine.invoke(ReflectionEngine.java:357)
+	at py4j.Gateway.invoke(Gateway.java:282)
+	at py4j.commands.AbstractCommand.invokeMethod(AbstractCommand.java:132)
+	at py4j.commands.CallCommand.execute(CallCommand.java:79)
+	at py4j.GatewayConnection.run(GatewayConnection.java:238)
+	at java.lang.Thread.run(Thread.java:750)
+

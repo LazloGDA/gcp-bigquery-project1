@@ -1,0 +1,368 @@
+Gustavus, AK
+Barrow, AK
+Cordova, AK
+Adak Island, AK
+Owensboro, KY
+Bishop, CA
+Pierre, SD
+Pago Pago, TT
+Kearney, NE
+Arcata/Eureka, CA
+Eau Claire, WI
+Ithaca/Cortland, NY
+Walla Walla, WA
+Pueblo, CO
+Concord, NC
+Springfield, IL
+Hagerstown, MD
+Ogden, UT
+Sitka, AK
+Dodge City, KS
+Greenville, NC
+Rochester, NY
+Nantucket, MA
+Charleston, SC
+Sun Valley/Hailey/Ketchum, ID
+Roanoke, VA
+La Crosse, WI
+Sioux City, IA
+Richmond, VA
+Fresno, CA
+Missoula, MT
+Wrangell, AK
+Dillingham, AK
+Monterey, CA
+Aberdeen, SD
+Redding, CA
+Green Bay, WI
+San Angelo, TX
+Corpus Christi, TX
+Santa Fe, NM
+Binghamton, NY
+Mission/McAllen/Edinburg, TX
+Bend/Redmond, OR
+Gillette, WY
+Greer, SC
+Greensboro/High Point, NC
+Joplin, MO
+Anchorage, AK
+Alpena, MI
+Riverton/Lander, WY
+Devils Lake, ND
+Johnstown, PA
+Mosinee, WI
+San Antonio, TX
+Deadhorse, AK
+Harrisburg, PA
+Houston, TX
+St. Petersburg, FL
+San Luis Obispo, CA
+St. Louis, MO
+Prescott, AZ
+Bloomington/Normal, IL
+New Orleans, LA
+Saginaw/Bay City/Midland, MI
+Bemidji, MN
+Rochester, MN
+Kotzebue, AK
+Newburgh/Poughkeepsie, NY
+Cheyenne, WY
+Wilmington, NC
+Birmingham, AL
+Charleston/Dunbar, WV
+Jackson, WY
+Juneau, AK
+San Jose, CA
+Medford, OR
+Flagstaff, AZ
+Plattsburgh, NY
+Escanaba, MI
+Laredo, TX
+Tallahassee, FL
+Durango, CO
+Fort Wayne, IN
+Atlanta, GA
+St. George, UT
+Cape Girardeau, MO
+Orlando, FL
+Rapid City, SD
+Lafayette, LA
+Bellingham, WA
+Akron, OH
+South Bend, IN
+Lincoln, NE
+Newark, NJ
+Sioux Falls, SD
+Bakersfield, CA
+Santa Ana, CA
+Reno, NV
+Pocatello, ID
+International Falls, MN
+Great Falls, MT
+Santa Barbara, CA
+Charlotte, NC
+State College, PA
+Grand Junction, CO
+Asheville, NC
+Savannah, GA
+Fort Dodge, IA
+White Plains, NY
+Jacksonville, FL
+Grand Forks, ND
+Yakutat, AK
+Eagle, CO
+Kansas City, MO
+Madison, WI
+Wichita, KS
+Aspen, CO
+Kahului, HI
+Buffalo, NY
+Myrtle Beach, SC
+Texarkana, AR
+Sacramento, CA
+North Platte, NE
+Bristol/Johnson City/Kingsport, TN
+Charlottesville, VA
+Melbourne, FL
+Valdosta, GA
+Portsmouth, NH
+Pullman, WA
+Stockton, CA
+Denver, CO
+Ketchikan, AK
+Salt Lake City, UT
+Kodiak, AK
+San Juan, PR
+Decatur, IL
+Cedar City, UT
+Ontario, CA
+Des Moines, IA
+Shreveport, LA
+Lewisburg, WV
+Lansing, MI
+Dickinson, ND
+Gunnison, CO
+Rock Springs, WY
+Fort Lauderdale, FL
+Dayton, OH
+Jacksonville/Camp Lejeune, NC
+Tyler, TX
+Salina, KS
+Columbus, GA
+Stillwater, OK
+Hayden, CO
+Watertown, NY
+Mobile, AL
+Victoria, TX
+Clarksburg/Fairmont, WV
+Waterloo, IA
+Montgomery, AL
+Daytona Beach, FL
+Aguadilla, PR
+Del Rio, TX
+Palm Springs, CA
+Billings, MT
+Manchester, NH
+Albany, GA
+Champaign/Urbana, IL
+Columbus, OH
+Casper, WY
+Islip, NY
+Portland, OR
+Yuma, AZ
+Branson, MO
+Hyannis, MA
+Brunswick, GA
+Tucson, AZ
+Gainesville, FL
+Hartford, CT
+Oakland, CA
+Ogdensburg, NY
+Bozeman, MT
+Tampa, FL
+Twin Falls, ID
+Columbia, SC
+Huntsville, AL
+Saipan, TT
+Panama City, FL
+Burlington, VT
+Pellston, MI
+Chattanooga, TN
+Scranton/Wilkes-Barre, PA
+Florence, SC
+Punta Gorda, FL
+Norfolk, VA
+Wenatchee, WA
+Elko, NV
+New York, NY
+Indianapolis, IN
+Erie, PA
+Alamosa, CO
+Hays, KS
+Worcester, MA
+Chicago, IL
+Jamestown, ND
+Washington, DC
+Jackson/Vicksburg, MS
+San Francisco, CA
+Fayetteville, NC
+Moline, IL
+Allentown/Bethlehem/Easton, PA
+Meridian, MS
+Mason City, IA
+Harlingen/San Benito, TX
+Yakima, WA
+Abilene, TX
+Gulfport/Biloxi, MS
+Charlotte Amalie, VI
+Dallas, TX
+Laramie, WY
+Burbank, CA
+Midland/Odessa, TX
+Augusta, GA
+Scottsbluff, NE
+Honolulu, HI
+Tulsa, OK
+Springfield, MO
+Helena, MT
+King Salmon, AK
+Baltimore, MD
+West Palm Beach/Palm Beach, FL
+Fort Myers, FL
+Boston, MA
+Santa Maria, CA
+Garden City, KS
+Hobbs, NM
+Cedar Rapids/Iowa City, IA
+Killeen, TX
+Christiansted, VI
+Belleville, IL
+Santa Rosa, CA
+Key West, FL
+Nome, AK
+Martha's Vineyard, MA
+Newport News/Williamsburg, VA
+Wilmington, DE
+Salisbury, MD
+Atlantic City, NJ
+Albuquerque, NM
+Trenton, NJ
+Grand Rapids, MI
+Raleigh/Durham, NC
+Portland, ME
+Bangor, ME
+Syracuse, NY
+Seattle, WA
+Brownsville, TX
+Boise, ID
+Idaho Falls, ID
+Spokane, WA
+Valparaiso, FL
+Minot, ND
+Philadelphia, PA
+Manhattan/Ft. Riley, KS
+Minneapolis, MN
+Dallas/Fort Worth, TX
+Brainerd, MN
+Lexington, KY
+Albany, NY
+Liberal, KS
+Kalispell, MT
+Vernal, UT
+Colorado Springs, CO
+Nashville, TN
+Lubbock, TX
+Hibbing, MN
+Ashland, WV
+Peoria, IL
+Oklahoma City, OK
+Monroe, LA
+Beaumont/Port Arthur, TX
+Los Angeles, CA
+Miami, FL
+Hattiesburg/Laurel, MS
+Waco, TX
+Pasco/Kennewick/Richland, WA
+Lawton/Fort Sill, OK
+San Diego, CA
+Fargo, ND
+Latrobe, PA
+Detroit, MI
+Lynchburg, VA
+Dubuque, IA
+Staunton, VA
+Sarasota/Bradenton, FL
+Knoxville, TN
+Petersburg, AK
+Wichita Falls, TX
+Bismarck/Mandan, ND
+Austin, TX
+Guam, TT
+Providence, RI
+Omaha, NE
+College Station/Bryan, TX
+Hilton Head, SC
+Baton Rouge, LA
+Paducah, KY
+Fayetteville, AR
+Columbia, MO
+Milwaukee, WI
+Kona, HI
+Lake Charles, LA
+Fort Leonard Wood, MO
+Niagara Falls, NY
+El Paso, TX
+Memphis, TN
+Everett, WA
+Dothan, AL
+Evansville, IN
+Cleveland, OH
+Provo, UT
+Toledo, OH
+Sanford, FL
+Grand Island, NE
+Little Rock, AR
+Cincinnati, OH
+Kalamazoo, MI
+Appleton, WI
+Louisville, KY
+Muskegon, MI
+St. Cloud, MN
+Hilo, HI
+Moab, UT
+West Yellowstone, MT
+Williston, ND
+Eugene, OR
+Montrose/Delta, CO
+Elmira/Corning, NY
+Traverse City, MI
+Sault Ste. Marie, MI
+Alexandria, LA
+Fairbanks, AK
+Rhinelander, WI
+Iron Mountain/Kingsfd, MI
+Longview, TX
+Butte, MT
+Duluth, MN
+Sheridan, WY
+Marquette, MI
+Presque Isle/Houlton, ME
+New Bern/Morehead/Beaufort, NC
+Long Beach, CA
+Ponce, PR
+Phoenix, AZ
+Rockford, IL
+Las Vegas, NV
+Cody, WY
+Fort Smith, AR
+Lewiston, ID
+Pittsburgh, PA
+Lihue, HI
+Bethel, AK
+North Bend/Coos Bay, OR
+Pensacola, FL
+Columbus, MS
+Hancock/Houghton, MI
+Flint, MI
+Amarillo, TX
+Roswell, NM

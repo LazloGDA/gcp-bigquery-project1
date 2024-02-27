@@ -1,0 +1,81 @@
++ readonly VM_CONNECTORS_HADOOP_DIR=/usr/lib/hadoop/lib
++ VM_CONNECTORS_HADOOP_DIR=/usr/lib/hadoop/lib
++ readonly VM_CONNECTORS_DATAPROC_DIR=/usr/local/share/google/dataproc/lib
++ VM_CONNECTORS_DATAPROC_DIR=/usr/local/share/google/dataproc/lib
++ declare -A MIN_CONNECTOR_VERSIONS
++ MIN_CONNECTOR_VERSIONS=(["bigquery"]="1.0.0" ["spark-bigquery"]="0.17.0" ["hive-bigquery"]="0.0.0")
++ test -v DATAPROC_IMAGE_VERSION
+++ /usr/share/google/get_metadata_value attributes/bigquery-connector-version
+++ true
++ readonly BIGQUERY_CONNECTOR_VERSION=
++ BIGQUERY_CONNECTOR_VERSION=
+++ /usr/share/google/get_metadata_value attributes/spark-bigquery-connector-version
++ readonly SPARK_BIGQUERY_CONNECTOR_VERSION==0.21.0
++ SPARK_BIGQUERY_CONNECTOR_VERSION==0.21.0
+++ /usr/share/google/get_metadata_value attributes/hive-bigquery-connector-version
+++ true
++ readonly HIVE_BIGQUERY_CONNECTOR_VERSION=
++ HIVE_BIGQUERY_CONNECTOR_VERSION=
+++ /usr/share/google/get_metadata_value attributes/bigquery-connector-url
+++ true
++ readonly BIGQUERY_CONNECTOR_URL=
++ BIGQUERY_CONNECTOR_URL=
+++ /usr/share/google/get_metadata_value attributes/spark-bigquery-connector-url
+++ true
++ readonly SPARK_BIGQUERY_CONNECTOR_URL=
++ SPARK_BIGQUERY_CONNECTOR_URL=
+++ /usr/share/google/get_metadata_value attributes/hive-bigquery-connector-url
+++ true
++ readonly HIVE_BIGQUERY_CONNECTOR_URL=
++ HIVE_BIGQUERY_CONNECTOR_URL=
++ [[ -z '' ]]
++ [[ -z '' ]]
++ [[ -z '' ]]
++ [[ -z '' ]]
++ [[ -z =0.21.0 ]]
++ update_connector bigquery '' ''
++ local -r name=bigquery
++ local -r version=
++ local -r url=
++ [[ -n '' ]]
++ [[ -n '' ]]
++ [[ -n '' ]]
++ update_connector spark-bigquery =0.21.0 ''
++ local -r name=spark-bigquery
++ local -r version==0.21.0
++ local -r url=
++ [[ -n =0.21.0 ]]
++ [[ -n '' ]]
++ [[ -n =0.21.0 ]]
++ update_connector_version spark-bigquery =0.21.0
++ local -r name=spark-bigquery
++ local -r version==0.21.0
++ validate_version spark-bigquery =0.21.0
++ local name=spark-bigquery
++ local version==0.21.0
++ local min_valid_version=0.17.0
+++ min_version 0.17.0 =0.21.0
+++ sort -r -t. -n -k1,1 -k2,2 -k3,3
+++ tail -n1
+++ echo -e '0.17.0\n=0.21.0'
++ [[ 0.17.0 != \0\.\1\7\.\0 ]]
+++ get_connector_url spark-bigquery =0.21.0
+++ local -r name=spark-bigquery
+++ local -r version==0.21.0
+++ [[ spark-bigquery == spark-bigquery ]]
+++ case "${DATAPROC_IMAGE_VERSION}" in
+++ scala_version=2.12
+++ local -r jar_name=spark-bigquery-with-dependencies_2.12-=0.21.0.jar
+++ echo gs://spark-lib/bigquery/spark-bigquery-with-dependencies_2.12-=0.21.0.jar
+++ return
++ local -r connector_url=gs://spark-lib/bigquery/spark-bigquery-with-dependencies_2.12-=0.21.0.jar
++ update_connector_url spark-bigquery gs://spark-lib/bigquery/spark-bigquery-with-dependencies_2.12-=0.21.0.jar
++ local -r name=spark-bigquery
++ local -r url=gs://spark-lib/bigquery/spark-bigquery-with-dependencies_2.12-=0.21.0.jar
++ [[ -d /usr/local/share/google/dataproc/lib ]]
++ local vm_connectors_dir=/usr/local/share/google/dataproc/lib
++ [[ spark-bigquery == spark-bigquery ]]
++ local 'pattern=spark-bigquery*.jar'
++ find /usr/local/share/google/dataproc/lib/ -name 'spark-bigquery*.jar' -delete
++ gsutil cp -P gs://spark-lib/bigquery/spark-bigquery-with-dependencies_2.12-=0.21.0.jar /usr/local/share/google/dataproc/lib/
+CommandException: No URLs matched: gs://spark-lib/bigquery/spark-bigquery-with-dependencies_2.12-=0.21.0.jar

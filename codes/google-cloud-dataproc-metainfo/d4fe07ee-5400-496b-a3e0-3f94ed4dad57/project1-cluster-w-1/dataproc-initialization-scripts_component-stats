@@ -1,0 +1,12 @@
+name: "gs://goog-dataproc-initialization-actions-europe-west3/connectors/connectors.sh"
+type: INIT_ACTION
+state: DONE
+start_time {
+  seconds: 1708531137
+  nanos: 820000000
+}
+end_time {
+  seconds: 1708531141
+  nanos: 929000000
+}
+

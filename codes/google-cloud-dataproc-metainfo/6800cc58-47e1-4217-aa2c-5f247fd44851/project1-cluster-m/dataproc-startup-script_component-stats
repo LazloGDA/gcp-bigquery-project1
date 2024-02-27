@@ -1,0 +1,270 @@
+name: "dataproc-startup-script"
+type: INIT_ACTION
+state: DONE
+start_time {
+  seconds: 1708461305
+  nanos: 153000000
+}
+end_time {
+  seconds: 1708461397
+  nanos: 403000000
+}
+
+name: "earlyoom"
+type: COMPONENT
+phase_stats {
+  phase_name: "activate"
+  start_time {
+    seconds: 1708461326
+    nanos: 78903846
+  }
+  end_time {
+    seconds: 1708461330
+    nanos: 858198092
+  }
+}
+
+name: "hdfs"
+type: COMPONENT
+phase_stats {
+  phase_name: "activate"
+  start_time {
+    seconds: 1708461326
+    nanos: 150998468
+  }
+  end_time {
+    seconds: 1708461396
+    nanos: 602736644
+  }
+}
+
+name: "hive-metastore"
+type: COMPONENT
+phase_stats {
+  phase_name: "activate"
+  start_time {
+    seconds: 1708461326
+    nanos: 136474487
+  }
+  end_time {
+    seconds: 1708461382
+    nanos: 427946129
+  }
+}
+
+name: "hive-server2"
+type: COMPONENT
+phase_stats {
+  phase_name: "activate"
+  start_time {
+    seconds: 1708461326
+    nanos: 100150677
+  }
+  end_time {
+    seconds: 1708461326
+    nanos: 819292022
+  }
+}
+
+name: "jupyter"
+type: COMPONENT
+phase_stats {
+  phase_name: "activate"
+  start_time {
+    seconds: 1708461326
+    nanos: 175754773
+  }
+  end_time {
+    seconds: 1708461390
+    nanos: 152678419
+  }
+}
+
+name: "knox"
+type: COMPONENT
+phase_stats {
+  phase_name: "activate"
+  start_time {
+    seconds: 1708461326
+    nanos: 125316994
+  }
+  end_time {
+    seconds: 1708461345
+    nanos: 583615658
+  }
+}
+
+name: "mapreduce"
+type: COMPONENT
+phase_stats {
+  phase_name: "activate"
+  start_time {
+    seconds: 1708461326
+    nanos: 124490800
+  }
+  end_time {
+    seconds: 1708461326
+    nanos: 405100028
+  }
+}
+
+name: "miniconda3"
+type: COMPONENT
+phase_stats {
+  phase_name: "activate"
+  start_time {
+    seconds: 1708461326
+    nanos: 127604938
+  }
+  end_time {
+    seconds: 1708461326
+    nanos: 546540421
+  }
+}
+
+name: "mysql"
+type: COMPONENT
+phase_stats {
+  phase_name: "activate"
+  start_time {
+    seconds: 1708461326
+    nanos: 109628351
+  }
+  end_time {
+    seconds: 1708461326
+    nanos: 168793022
+  }
+}
+
+name: "npd"
+type: COMPONENT
+phase_stats {
+  phase_name: "activate"
+  start_time {
+    seconds: 1708461326
+    nanos: 123951434
+  }
+  end_time {
+    seconds: 1708461330
+    nanos: 900544160
+  }
+}
+
+name: "pig"
+type: COMPONENT
+phase_stats {
+  phase_name: "activate"
+  start_time {
+    seconds: 1708461326
+    nanos: 101602312
+  }
+  end_time {
+    seconds: 1708461326
+    nanos: 178246054
+  }
+}
+
+name: "proxy-agent"
+type: COMPONENT
+phase_stats {
+  phase_name: "activate"
+  start_time {
+    seconds: 1708461326
+    nanos: 148305430
+  }
+  end_time {
+    seconds: 1708461330
+    nanos: 904139923
+  }
+}
+
+name: "spark"
+type: COMPONENT
+phase_stats {
+  phase_name: "activate"
+  start_time {
+    seconds: 1708461326
+    nanos: 124409125
+  }
+  end_time {
+    seconds: 1708461326
+    nanos: 533990691
+  }
+}
+
+name: "tez"
+type: COMPONENT
+phase_stats {
+  phase_name: "activate"
+  start_time {
+    seconds: 1708461326
+    nanos: 173417329
+  }
+  end_time {
+    seconds: 1708461326
+    nanos: 231262173
+  }
+}
+
+name: "yarn"
+type: COMPONENT
+phase_stats {
+  phase_name: "activate"
+  start_time {
+    seconds: 1708461326
+    nanos: 126248288
+  }
+  end_time {
+    seconds: 1708461326
+    nanos: 440158322
+  }
+}
+
+name: "networking.service"
+type: SYSTEMD_SERVICE
+state: DONE
+start_time {
+  seconds: 1708461299
+  nanos: 4674000
+}
+end_time {
+  seconds: 1708461300
+  nanos: 204545000
+}
+
+name: "systemd-remount-fs.service"
+type: SYSTEMD_SERVICE
+state: DONE
+start_time {
+  seconds: 1708461295
+  nanos: 912538000
+}
+end_time {
+  seconds: 1708461296
+  nanos: 96328000
+}
+
+name: "google-guest-agent.service"
+type: SYSTEMD_SERVICE
+state: DONE
+start_time {
+  seconds: 1708461300
+  nanos: 220074000
+}
+end_time {
+  seconds: 1708461301
+  nanos: 315419000
+}
+
+name: "local-fs.target"
+type: SYSTEMD_SERVICE
+state: DONE
+start_time {
+  seconds: 1708461298
+  nanos: 835969000
+}
+end_time {
+  seconds: 1708461298
+  nanos: 835969000
+}
+

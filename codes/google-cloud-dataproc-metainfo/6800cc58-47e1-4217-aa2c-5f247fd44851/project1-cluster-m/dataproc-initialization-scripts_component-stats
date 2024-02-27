@@ -1,0 +1,14 @@
+name: "gs://goog-dataproc-initialization-actions-europe-west3/connectors/connectors.sh"
+type: INIT_ACTION
+state: FAILED
+start_time {
+  seconds: 1708461397
+  nanos: 681000000
+}
+end_time {
+  seconds: 1708461398
+  nanos: 48000000
+}
+error_detail: "Initialization action failed. Failed action \'gs://goog-dataproc-initialization-actions-europe-west3/connectors/connectors.sh\', see output in: gs://gcp-bigquery-project1-bucket/google-cloud-dataproc-metainfo/6800cc58-47e1-4217-aa2c-5f247fd44851/project1-cluster-m/dataproc-initialization-script-0_output"
+error_code: TASK_FAILED
+

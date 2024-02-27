@@ -1,0 +1,193 @@
+{
+  "outputs": {
+    "Cancelled_logits": {
+      "output_tensor_name": "Add:0"
+    }
+  },
+  "inputs": {
+    "CRSArrTime": {
+      "input_tensor_name": "CRSArrTime:0",
+      "encoding": "identity",
+      "modality": "numeric"
+    },
+    "CRSDepTime": {
+      "input_tensor_name": "CRSDepTime:0",
+      "encoding": "identity",
+      "modality": "numeric"
+    },
+    "CRSElapsedTime": {
+      "input_tensor_name": "CRSElapsedTime:0",
+      "encoding": "identity",
+      "modality": "numeric"
+    },
+    "DOT_ID_Marketing_Airline": {
+      "input_tensor_name": "DOT_ID_Marketing_Airline:0",
+      "encoding": "identity",
+      "modality": "numeric"
+    },
+    "DOT_ID_Operating_Airline": {
+      "input_tensor_name": "DOT_ID_Operating_Airline:0",
+      "encoding": "identity",
+      "modality": "numeric"
+    },
+    "DayOfWeek": {
+      "input_tensor_name": "DayOfWeek:0",
+      "encoding": "identity",
+      "modality": "numeric"
+    },
+    "DayofMonth": {
+      "input_tensor_name": "DayofMonth:0",
+      "encoding": "identity",
+      "modality": "numeric"
+    },
+    "DestAirportID": {
+      "input_tensor_name": "DestAirportID:0",
+      "encoding": "identity",
+      "modality": "numeric"
+    },
+    "DestCityMarketID": {
+      "input_tensor_name": "DestCityMarketID:0",
+      "encoding": "identity",
+      "modality": "numeric"
+    },
+    "DestStateFips": {
+      "input_tensor_name": "DestStateFips:0",
+      "encoding": "identity",
+      "modality": "numeric"
+    },
+    "DestWac": {
+      "input_tensor_name": "DestWac:0",
+      "encoding": "identity",
+      "modality": "numeric"
+    },
+    "Distance": {
+      "input_tensor_name": "Distance:0",
+      "encoding": "identity",
+      "modality": "numeric"
+    },
+    "DistanceGroup": {
+      "input_tensor_name": "DistanceGroup:0",
+      "encoding": "identity",
+      "modality": "numeric"
+    },
+    "DivAirportLandings": {
+      "input_tensor_name": "DivAirportLandings:0",
+      "encoding": "identity",
+      "modality": "numeric"
+    },
+    "Flight_Number_Marketing_Airline": {
+      "input_tensor_name": "Flight_Number_Marketing_Airline:0",
+      "encoding": "identity",
+      "modality": "numeric"
+    },
+    "Flight_Number_Operating_Airline": {
+      "input_tensor_name": "Flight_Number_Operating_Airline:0",
+      "encoding": "identity",
+      "modality": "numeric"
+    },
+    "Month": {
+      "input_tensor_name": "Month:0",
+      "encoding": "identity",
+      "modality": "numeric"
+    },
+    "OriginAirportID": {
+      "input_tensor_name": "OriginAirportID:0",
+      "encoding": "identity",
+      "modality": "numeric"
+    },
+    "OriginCityMarketID": {
+      "input_tensor_name": "OriginCityMarketID:0",
+      "encoding": "identity",
+      "modality": "numeric"
+    },
+    "OriginStateFips": {
+      "input_tensor_name": "OriginStateFips:0",
+      "encoding": "identity",
+      "modality": "numeric"
+    },
+    "OriginWac": {
+      "input_tensor_name": "OriginWac:0",
+      "encoding": "identity",
+      "modality": "numeric"
+    },
+    "Quarter": {
+      "input_tensor_name": "Quarter:0",
+      "encoding": "identity",
+      "modality": "numeric"
+    },
+    "Year": {
+      "input_tensor_name": "Year:0",
+      "encoding": "identity",
+      "modality": "numeric"
+    },
+    "Airline": {
+      "input_tensor_name": "Airline:0",
+      "encoding": "identity",
+      "modality": "numeric"
+    },
+    "ArrTimeBlk": {
+      "input_tensor_name": "ArrTimeBlk:0",
+      "encoding": "identity",
+      "modality": "numeric"
+    },
+    "DepTimeBlk": {
+      "input_tensor_name": "DepTimeBlk:0",
+      "encoding": "identity",
+      "modality": "numeric"
+    },
+    "Dest": {
+      "input_tensor_name": "Dest:0",
+      "encoding": "identity",
+      "modality": "numeric"
+    },
+    "DestCityName": {
+      "input_tensor_name": "DestCityName:0",
+      "encoding": "identity",
+      "modality": "numeric"
+    },
+    "Diverted": {
+      "input_tensor_name": "Diverted:0",
+      "encoding": "identity",
+      "modality": "numeric"
+    },
+    "FlightDate": {
+      "input_tensor_name": "FlightDate:0",
+      "encoding": "identity",
+      "modality": "numeric"
+    },
+    "Marketing_Airline_Network": {
+      "input_tensor_name": "Marketing_Airline_Network:0",
+      "encoding": "identity",
+      "modality": "numeric"
+    },
+    "Operated_or_Branded_Code_Share_Partners": {
+      "input_tensor_name": "Operated_or_Branded_Code_Share_Partners:0",
+      "encoding": "identity",
+      "modality": "numeric"
+    },
+    "Operating_Airline": {
+      "input_tensor_name": "Operating_Airline:0",
+      "encoding": "identity",
+      "modality": "numeric"
+    },
+    "Origin": {
+      "input_tensor_name": "Origin:0",
+      "encoding": "identity",
+      "modality": "numeric"
+    },
+    "OriginCityName": {
+      "input_tensor_name": "OriginCityName:0",
+      "encoding": "identity",
+      "modality": "numeric"
+    },
+    "split": {
+      "input_tensor_name": "split:0",
+      "encoding": "identity",
+      "modality": "numeric"
+    }
+  },
+  "framework": "Tensorflow",
+  "tags": [
+    "explainable_ai_sdk"
+  ]
+}

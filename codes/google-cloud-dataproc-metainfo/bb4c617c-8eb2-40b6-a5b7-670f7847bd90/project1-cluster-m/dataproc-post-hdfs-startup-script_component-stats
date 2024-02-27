@@ -1,0 +1,303 @@
+name: "dataproc-post-hdfs-startup-script"
+type: INIT_ACTION
+state: DONE
+start_time {
+  seconds: 1708534134
+  nanos: 370000000
+}
+end_time {
+  seconds: 1708534149
+  nanos: 797000000
+}
+
+name: "earlyoom"
+type: COMPONENT
+phase_stats {
+  phase_name: "activate"
+  start_time {
+    seconds: 1708534013
+    nanos: 725319154
+  }
+  end_time {
+    seconds: 1708534019
+    nanos: 931678640
+  }
+}
+
+name: "hdfs"
+type: COMPONENT
+phase_stats {
+  phase_name: "activate"
+  start_time {
+    seconds: 1708534013
+    nanos: 719990634
+  }
+  end_time {
+    seconds: 1708534118
+    nanos: 10207084
+  }
+}
+
+name: "hive-metastore"
+type: COMPONENT
+phase_stats {
+  phase_name: "activate"
+  start_time {
+    seconds: 1708534013
+    nanos: 722889763
+  }
+  end_time {
+    seconds: 1708534112
+    nanos: 59499889
+  }
+}
+
+name: "hive-server2"
+type: COMPONENT
+phase_stats {
+  phase_name: "activate"
+  start_time {
+    seconds: 1708534013
+    nanos: 804866417
+  }
+  end_time {
+    seconds: 1708534015
+    nanos: 346320073
+  }
+}
+phase_stats {
+  phase_name: "post-hdfs"
+  start_time {
+    seconds: 1708534134
+    nanos: 480213674
+  }
+  end_time {
+    seconds: 1708534149
+    nanos: 422867627
+  }
+}
+
+name: "jupyter"
+type: COMPONENT
+phase_stats {
+  phase_name: "activate"
+  start_time {
+    seconds: 1708534013
+    nanos: 758417944
+  }
+  end_time {
+    seconds: 1708534125
+    nanos: 6397745
+  }
+}
+
+name: "knox"
+type: COMPONENT
+phase_stats {
+  phase_name: "activate"
+  start_time {
+    seconds: 1708534013
+    nanos: 812430334
+  }
+  end_time {
+    seconds: 1708534059
+    nanos: 409328398
+  }
+}
+
+name: "mapreduce"
+type: COMPONENT
+phase_stats {
+  phase_name: "activate"
+  start_time {
+    seconds: 1708534013
+    nanos: 822109545
+  }
+  end_time {
+    seconds: 1708534014
+    nanos: 188328990
+  }
+}
+phase_stats {
+  phase_name: "post-hdfs"
+  start_time {
+    seconds: 1708534134
+    nanos: 496846119
+  }
+  end_time {
+    seconds: 1708534134
+    nanos: 570312863
+  }
+}
+
+name: "miniconda3"
+type: COMPONENT
+phase_stats {
+  phase_name: "activate"
+  start_time {
+    seconds: 1708534013
+    nanos: 716816846
+  }
+  end_time {
+    seconds: 1708534014
+    nanos: 821829760
+  }
+}
+
+name: "mysql"
+type: COMPONENT
+phase_stats {
+  phase_name: "activate"
+  start_time {
+    seconds: 1708534013
+    nanos: 789484358
+  }
+  end_time {
+    seconds: 1708534013
+    nanos: 924050736
+  }
+}
+
+name: "npd"
+type: COMPONENT
+phase_stats {
+  phase_name: "activate"
+  start_time {
+    seconds: 1708534013
+    nanos: 748857197
+  }
+  end_time {
+    seconds: 1708534019
+    nanos: 958353528
+  }
+}
+
+name: "pig"
+type: COMPONENT
+phase_stats {
+  phase_name: "activate"
+  start_time {
+    seconds: 1708534013
+    nanos: 826408802
+  }
+  end_time {
+    seconds: 1708534013
+    nanos: 950141994
+  }
+}
+
+name: "proxy-agent"
+type: COMPONENT
+phase_stats {
+  phase_name: "activate"
+  start_time {
+    seconds: 1708534013
+    nanos: 882449970
+  }
+  end_time {
+    seconds: 1708534020
+    nanos: 23338067
+  }
+}
+
+name: "spark"
+type: COMPONENT
+phase_stats {
+  phase_name: "activate"
+  start_time {
+    seconds: 1708534013
+    nanos: 699651373
+  }
+  end_time {
+    seconds: 1708534014
+    nanos: 636787059
+  }
+}
+phase_stats {
+  phase_name: "post-hdfs"
+  start_time {
+    seconds: 1708534134
+    nanos: 485275034
+  }
+  end_time {
+    seconds: 1708534139
+    nanos: 585516098
+  }
+}
+
+name: "tez"
+type: COMPONENT
+phase_stats {
+  phase_name: "activate"
+  start_time {
+    seconds: 1708534013
+    nanos: 698743763
+  }
+  end_time {
+    seconds: 1708534013
+    nanos: 712177474
+  }
+}
+
+name: "yarn"
+type: COMPONENT
+phase_stats {
+  phase_name: "activate"
+  start_time {
+    seconds: 1708534013
+    nanos: 846858490
+  }
+  end_time {
+    seconds: 1708534014
+    nanos: 547608780
+  }
+}
+
+name: "networking.service"
+type: SYSTEMD_SERVICE
+state: DONE
+start_time {
+  seconds: 1708533975
+  nanos: 992838000
+}
+end_time {
+  seconds: 1708533977
+  nanos: 740613000
+}
+
+name: "systemd-remount-fs.service"
+type: SYSTEMD_SERVICE
+state: DONE
+start_time {
+  seconds: 1708533974
+  nanos: 324788000
+}
+end_time {
+  seconds: 1708533974
+  nanos: 484970000
+}
+
+name: "google-guest-agent.service"
+type: SYSTEMD_SERVICE
+state: DONE
+start_time {
+  seconds: 1708533977
+  nanos: 763290000
+}
+end_time {
+  seconds: 1708533981
+  nanos: 542037000
+}
+
+name: "local-fs.target"
+type: SYSTEMD_SERVICE
+state: DONE
+start_time {
+  seconds: 1708533975
+  nanos: 556069000
+}
+end_time {
+  seconds: 1708533975
+  nanos: 556069000
+}
+

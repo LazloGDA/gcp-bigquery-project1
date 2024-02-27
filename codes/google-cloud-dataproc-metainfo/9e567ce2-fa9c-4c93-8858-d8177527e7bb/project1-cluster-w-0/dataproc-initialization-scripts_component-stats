@@ -1,0 +1,28 @@
+name: "gs://goog-dataproc-initialization-actions-europe-west3/connectors/connectors.sh"
+type: INIT_ACTION
+state: FAILED
+start_time {
+  seconds: 1708528459
+  nanos: 151000000
+}
+end_time {
+  seconds: 1708528461
+  nanos: 136000000
+}
+error_detail: "Initialization action failed. Failed action \'gs://goog-dataproc-initialization-actions-europe-west3/connectors/connectors.sh\', see output in: gs://gcp-bigquery-project1-bucket/google-cloud-dataproc-metainfo/9e567ce2-fa9c-4c93-8858-d8177527e7bb/project1-cluster-w-0/dataproc-initialization-script-0_output"
+error_code: TASK_FAILED
+
+name: "gs://goog-dataproc-initialization-actions-europe-west3/cloud-sql-proxy/cloud-sql-proxy.sh"
+type: INIT_ACTION
+state: FAILED
+start_time {
+  seconds: 1708528461
+  nanos: 137000000
+}
+end_time {
+  seconds: 1708528838
+  nanos: 577000000
+}
+error_detail: "Initialization action failed. Failed action \'gs://goog-dataproc-initialization-actions-europe-west3/cloud-sql-proxy/cloud-sql-proxy.sh\', see output in: gs://gcp-bigquery-project1-bucket/google-cloud-dataproc-metainfo/9e567ce2-fa9c-4c93-8858-d8177527e7bb/project1-cluster-w-0/dataproc-initialization-script-1_output"
+error_code: TASK_FAILED
+

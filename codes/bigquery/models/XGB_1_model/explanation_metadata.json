@@ -1,0 +1,45 @@
+{
+	"framework" : "custom_container",
+	"inputs" : 
+	{
+		"Airline" : {},
+		"ArrTimeBlk" : {},
+		"CRSArrTime" : {},
+		"CRSDepTime" : {},
+		"CRSElapsedTime" : {},
+		"DOT_ID_Marketing_Airline" : {},
+		"DOT_ID_Operating_Airline" : {},
+		"DayOfWeek" : {},
+		"DayofMonth" : {},
+		"DepTimeBlk" : {},
+		"Dest" : {},
+		"DestAirportID" : {},
+		"DestCityMarketID" : {},
+		"DestCityName" : {},
+		"DestStateFips" : {},
+		"DestWac" : {},
+		"Distance" : {},
+		"DistanceGroup" : {},
+		"DivAirportLandings" : {},
+		"Diverted" : {},
+		"FlightDate" : {},
+		"Flight_Number_Marketing_Airline" : {},
+		"Flight_Number_Operating_Airline" : {},
+		"Marketing_Airline_Network" : {},
+		"Month" : {},
+		"Operated_or_Branded_Code_Share_Partners" : {},
+		"Operating_Airline" : {},
+		"Origin" : {},
+		"OriginAirportID" : {},
+		"OriginCityMarketID" : {},
+		"OriginCityName" : {},
+		"OriginStateFips" : {},
+		"OriginWac" : {},
+		"Quarter" : {},
+		"Year" : {}
+	},
+	"outputs" : 
+	{
+		"label_probs" : {}
+	}
+}

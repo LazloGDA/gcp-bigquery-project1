@@ -1,0 +1,53 @@
+Service Hive server2 is not enabled
+[2024-02-21T15:15:55+0000] [project1-cluster-m]: INFO: Stopping Hive metastore ...
+[2024-02-21T15:15:56+0000] [project1-cluster-m]: INFO: Hive metastore stopped
+[2024-02-21T15:15:56+0000] [project1-cluster-m]: INFO: Stopping and disabling mysql.service ...
+Synchronizing state of mysql.service with SysV service script with /lib/systemd/systemd-sysv-install.
+Executing: /lib/systemd/systemd-sysv-install disable mysql
+Removed /etc/systemd/system/multi-user.target.wants/mysql.service.
+[2024-02-21T15:15:59+0000] [project1-cluster-m]: INFO: mysql.service stopped and disabled
+Installing Cloud SQL Proxy ...
+2024-02-21 15:15:59 URL:https://dl.google.com/cloudsql/cloud_sql_proxy.linux.amd64 [19838876/19838876] -> "cloud_sql_proxy.linux.amd64" [1]
+[2024-02-21T15:15:59+0000] [project1-cluster-m]: INFO: Cloud SQL Proxy installation succeeded
+[2024-02-21T15:15:59+0000] [project1-cluster-m]: INFO: Starting Cloud SQL proxy ...
+Created symlink /etc/systemd/system/multi-user.target.wants/cloud-sql-proxy.service → /lib/systemd/system/cloud-sql-proxy.service.
+[2024-02-21T15:15:59+0000] [project1-cluster-m]: INFO: About to run 'nc -zv localhost 3306' with retries...
+nc: connect to localhost port 3306 (tcp) failed: Connection refused
+nc: connect to localhost port 3306 (tcp) failed: Connection refused
+[2024-02-21T15:15:59+0000] [project1-cluster-m]: INFO: 'nc -zv localhost 3306' attempt 1 failed! Sleeping 1.
+nc: connect to localhost port 3306 (tcp) failed: Connection refused
+nc: connect to localhost port 3306 (tcp) failed: Connection refused
+[2024-02-21T15:16:00+0000] [project1-cluster-m]: INFO: 'nc -zv localhost 3306' attempt 2 failed! Sleeping 1.
+nc: connect to localhost port 3306 (tcp) failed: Connection refused
+nc: connect to localhost port 3306 (tcp) failed: Connection refused
+[2024-02-21T15:16:01+0000] [project1-cluster-m]: INFO: 'nc -zv localhost 3306' attempt 3 failed! Sleeping 2.
+nc: connect to localhost port 3306 (tcp) failed: Connection refused
+nc: connect to localhost port 3306 (tcp) failed: Connection refused
+[2024-02-21T15:16:03+0000] [project1-cluster-m]: INFO: 'nc -zv localhost 3306' attempt 4 failed! Sleeping 3.
+nc: connect to localhost port 3306 (tcp) failed: Connection refused
+nc: connect to localhost port 3306 (tcp) failed: Connection refused
+[2024-02-21T15:16:06+0000] [project1-cluster-m]: INFO: 'nc -zv localhost 3306' attempt 5 failed! Sleeping 5.
+nc: connect to localhost port 3306 (tcp) failed: Connection refused
+nc: connect to localhost port 3306 (tcp) failed: Connection refused
+[2024-02-21T15:16:11+0000] [project1-cluster-m]: INFO: 'nc -zv localhost 3306' attempt 6 failed! Sleeping 8.
+nc: connect to localhost port 3306 (tcp) failed: Connection refused
+nc: connect to localhost port 3306 (tcp) failed: Connection refused
+[2024-02-21T15:16:19+0000] [project1-cluster-m]: INFO: 'nc -zv localhost 3306' attempt 7 failed! Sleeping 13.
+nc: connect to localhost port 3306 (tcp) failed: Connection refused
+nc: connect to localhost port 3306 (tcp) failed: Connection refused
+[2024-02-21T15:16:32+0000] [project1-cluster-m]: INFO: 'nc -zv localhost 3306' attempt 8 failed! Sleeping 21.
+nc: connect to localhost port 3306 (tcp) failed: Connection refused
+nc: connect to localhost port 3306 (tcp) failed: Connection refused
+[2024-02-21T15:16:53+0000] [project1-cluster-m]: INFO: 'nc -zv localhost 3306' attempt 9 failed! Sleeping 34.
+nc: connect to localhost port 3306 (tcp) failed: Connection refused
+nc: connect to localhost port 3306 (tcp) failed: Connection refused
+[2024-02-21T15:17:27+0000] [project1-cluster-m]: INFO: 'nc -zv localhost 3306' attempt 10 failed! Sleeping 55.
+nc: connect to localhost port 3306 (tcp) failed: Connection refused
+nc: connect to localhost port 3306 (tcp) failed: Connection refused
+[2024-02-21T15:18:22+0000] [project1-cluster-m]: INFO: 'nc -zv localhost 3306' attempt 11 failed! Sleeping 89.
+nc: connect to localhost port 3306 (tcp) failed: Connection refused
+nc: connect to localhost port 3306 (tcp) failed: Connection refused
+[2024-02-21T15:19:51+0000] [project1-cluster-m]: INFO: 'nc -zv localhost 3306' attempt 12 failed! Sleeping 144.
+[2024-02-21T15:22:15+0000] [project1-cluster-m]: INFO: Final attempt of 'nc -zv localhost 3306'...
+nc: connect to localhost port 3306 (tcp) failed: Connection refused
+nc: connect to localhost port 3306 (tcp) failed: Connection refused

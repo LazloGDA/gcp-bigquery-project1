@@ -1,0 +1,61 @@
+Warning: Ignoring non-Spark config property: enableAdvancedOptimizations
+Warning: Ignoring non-Spark config property: enableCaching
+Warning: Ignoring non-Spark config property: enableAdvancedExecutionLayer
+24/02/21 14:32:38 INFO org.apache.spark.SparkEnv: Registering MapOutputTracker
+24/02/21 14:32:38 INFO org.apache.spark.SparkEnv: Registering BlockManagerMaster
+24/02/21 14:32:39 INFO org.apache.spark.SparkEnv: Registering BlockManagerMasterHeartbeat
+24/02/21 14:32:39 INFO org.apache.spark.SparkEnv: Registering OutputCommitCoordinator
+24/02/21 14:32:39 INFO org.sparkproject.jetty.util.log: Logging initialized @4440ms to org.sparkproject.jetty.util.log.Slf4jLog
+24/02/21 14:32:39 INFO org.sparkproject.jetty.server.Server: jetty-9.4.40.v20210413; built: 2021-04-13T20:42:42.668Z; git: b881a572662e1943a14ae12e7e1207989f218b74; jvm 1.8.0_402-b06
+24/02/21 14:32:39 INFO org.sparkproject.jetty.server.Server: Started @4606ms
+24/02/21 14:32:39 INFO org.sparkproject.jetty.server.AbstractConnector: Started ServerConnector@5327bb52{HTTP/1.1, (http/1.1)}{0.0.0.0:44177}
+24/02/21 14:32:40 INFO org.apache.hadoop.yarn.client.RMProxy: Connecting to ResourceManager at project1-cluster-m/10.156.0.6:8032
+24/02/21 14:32:40 INFO org.apache.hadoop.yarn.client.AHSProxy: Connecting to Application History server at project1-cluster-m/10.156.0.6:10200
+24/02/21 14:32:41 INFO org.apache.hadoop.conf.Configuration: resource-types.xml not found
+24/02/21 14:32:41 INFO org.apache.hadoop.yarn.util.resource.ResourceUtils: Unable to find 'resource-types.xml'.
+24/02/21 14:32:42 INFO org.apache.hadoop.yarn.client.api.impl.YarnClientImpl: Submitted application application_1708464820437_0005
+24/02/21 14:32:43 INFO org.apache.hadoop.yarn.client.RMProxy: Connecting to ResourceManager at project1-cluster-m/10.156.0.6:8030
+24/02/21 14:32:45 INFO com.google.cloud.hadoop.fs.gcs.GhfsStorageStatistics: Detected potential high latency for operation op_get_file_status. latencyMs=196; previousMaxLatencyMs=0; operationCount=1; context=gs://dataproc-temp-europe-west3-671384469824-mghpndlt/a9479c99-8aaa-4a33-a41c-f8d77f1112cd/spark-job-history
+24/02/21 14:32:45 INFO com.google.cloud.hadoop.repackaged.gcs.com.google.cloud.hadoop.gcsio.GoogleCloudStorageImpl: Ignoring exception of type GoogleJsonResponseException; verified object already exists with desired state.
+24/02/21 14:32:45 INFO com.google.cloud.hadoop.fs.gcs.GhfsStorageStatistics: Detected potential high latency for operation op_mkdirs. latencyMs=151; previousMaxLatencyMs=0; operationCount=1; context=gs://dataproc-temp-europe-west3-671384469824-mghpndlt/a9479c99-8aaa-4a33-a41c-f8d77f1112cd/spark-job-history
+24/02/21 14:33:06 WARN org.apache.spark.scheduler.cluster.YarnScheduler: Initial job has not accepted any resources; check your cluster UI to ensure that workers are registered and have sufficient resources
+24/02/21 14:33:21 WARN org.apache.spark.scheduler.cluster.YarnScheduler: Initial job has not accepted any resources; check your cluster UI to ensure that workers are registered and have sufficient resources
+24/02/21 14:33:36 WARN org.apache.spark.scheduler.cluster.YarnScheduler: Initial job has not accepted any resources; check your cluster UI to ensure that workers are registered and have sufficient resources
+24/02/21 14:33:51 WARN org.apache.spark.scheduler.cluster.YarnScheduler: Initial job has not accepted any resources; check your cluster UI to ensure that workers are registered and have sufficient resources
+24/02/21 14:34:06 WARN org.apache.spark.scheduler.cluster.YarnScheduler: Initial job has not accepted any resources; check your cluster UI to ensure that workers are registered and have sufficient resources
+24/02/21 14:34:21 WARN org.apache.spark.scheduler.cluster.YarnScheduler: Initial job has not accepted any resources; check your cluster UI to ensure that workers are registered and have sufficient resources
+24/02/21 14:34:36 WARN org.apache.spark.scheduler.cluster.YarnScheduler: Initial job has not accepted any resources; check your cluster UI to ensure that workers are registered and have sufficient resources
+24/02/21 14:34:51 WARN org.apache.spark.scheduler.cluster.YarnScheduler: Initial job has not accepted any resources; check your cluster UI to ensure that workers are registered and have sufficient resources
+24/02/21 14:35:06 WARN org.apache.spark.scheduler.cluster.YarnScheduler: Initial job has not accepted any resources; check your cluster UI to ensure that workers are registered and have sufficient resources
+24/02/21 14:35:21 WARN org.apache.spark.scheduler.cluster.YarnScheduler: Initial job has not accepted any resources; check your cluster UI to ensure that workers are registered and have sufficient resources
+24/02/21 14:35:36 WARN org.apache.spark.scheduler.cluster.YarnScheduler: Initial job has not accepted any resources; check your cluster UI to ensure that workers are registered and have sufficient resources
+24/02/21 14:35:51 WARN org.apache.spark.scheduler.cluster.YarnScheduler: Initial job has not accepted any resources; check your cluster UI to ensure that workers are registered and have sufficient resources
+24/02/21 14:36:06 WARN org.apache.spark.scheduler.cluster.YarnScheduler: Initial job has not accepted any resources; check your cluster UI to ensure that workers are registered and have sufficient resources
+24/02/21 14:36:21 WARN org.apache.spark.scheduler.cluster.YarnScheduler: Initial job has not accepted any resources; check your cluster UI to ensure that workers are registered and have sufficient resources
+24/02/21 14:36:36 WARN org.apache.spark.scheduler.cluster.YarnScheduler: Initial job has not accepted any resources; check your cluster UI to ensure that workers are registered and have sufficient resources
+24/02/21 14:36:51 WARN org.apache.spark.scheduler.cluster.YarnScheduler: Initial job has not accepted any resources; check your cluster UI to ensure that workers are registered and have sufficient resources
+24/02/21 14:37:06 WARN org.apache.spark.scheduler.cluster.YarnScheduler: Initial job has not accepted any resources; check your cluster UI to ensure that workers are registered and have sufficient resources
+24/02/21 14:37:21 WARN org.apache.spark.scheduler.cluster.YarnScheduler: Initial job has not accepted any resources; check your cluster UI to ensure that workers are registered and have sufficient resources
+24/02/21 14:37:36 WARN org.apache.spark.scheduler.cluster.YarnScheduler: Initial job has not accepted any resources; check your cluster UI to ensure that workers are registered and have sufficient resources
+24/02/21 14:37:51 WARN org.apache.spark.scheduler.cluster.YarnScheduler: Initial job has not accepted any resources; check your cluster UI to ensure that workers are registered and have sufficient resources
+24/02/21 14:38:06 WARN org.apache.spark.scheduler.cluster.YarnScheduler: Initial job has not accepted any resources; check your cluster UI to ensure that workers are registered and have sufficient resources
+24/02/21 14:38:21 WARN org.apache.spark.scheduler.cluster.YarnScheduler: Initial job has not accepted any resources; check your cluster UI to ensure that workers are registered and have sufficient resources
+24/02/21 14:38:36 WARN org.apache.spark.scheduler.cluster.YarnScheduler: Initial job has not accepted any resources; check your cluster UI to ensure that workers are registered and have sufficient resources
+24/02/21 14:38:51 WARN org.apache.spark.scheduler.cluster.YarnScheduler: Initial job has not accepted any resources; check your cluster UI to ensure that workers are registered and have sufficient resources
+24/02/21 14:39:06 WARN org.apache.spark.scheduler.cluster.YarnScheduler: Initial job has not accepted any resources; check your cluster UI to ensure that workers are registered and have sufficient resources
+24/02/21 14:39:21 WARN org.apache.spark.scheduler.cluster.YarnScheduler: Initial job has not accepted any resources; check your cluster UI to ensure that workers are registered and have sufficient resources
+24/02/21 14:39:36 WARN org.apache.spark.scheduler.cluster.YarnScheduler: Initial job has not accepted any resources; check your cluster UI to ensure that workers are registered and have sufficient resources
+24/02/21 14:39:51 WARN org.apache.spark.scheduler.cluster.YarnScheduler: Initial job has not accepted any resources; check your cluster UI to ensure that workers are registered and have sufficient resources
+24/02/21 14:40:06 WARN org.apache.spark.scheduler.cluster.YarnScheduler: Initial job has not accepted any resources; check your cluster UI to ensure that workers are registered and have sufficient resources
+24/02/21 14:40:21 WARN org.apache.spark.scheduler.cluster.YarnScheduler: Initial job has not accepted any resources; check your cluster UI to ensure that workers are registered and have sufficient resources
+24/02/21 14:40:36 WARN org.apache.spark.scheduler.cluster.YarnScheduler: Initial job has not accepted any resources; check your cluster UI to ensure that workers are registered and have sufficient resources
+24/02/21 14:40:51 WARN org.apache.spark.scheduler.cluster.YarnScheduler: Initial job has not accepted any resources; check your cluster UI to ensure that workers are registered and have sufficient resources
+24/02/21 14:41:06 WARN org.apache.spark.scheduler.cluster.YarnScheduler: Initial job has not accepted any resources; check your cluster UI to ensure that workers are registered and have sufficient resources
+24/02/21 14:41:21 WARN org.apache.spark.scheduler.cluster.YarnScheduler: Initial job has not accepted any resources; check your cluster UI to ensure that workers are registered and have sufficient resources
+24/02/21 14:41:36 WARN org.apache.spark.scheduler.cluster.YarnScheduler: Initial job has not accepted any resources; check your cluster UI to ensure that workers are registered and have sufficient resources
+24/02/21 14:41:51 WARN org.apache.spark.scheduler.cluster.YarnScheduler: Initial job has not accepted any resources; check your cluster UI to ensure that workers are registered and have sufficient resources
+24/02/21 14:42:06 WARN org.apache.spark.scheduler.cluster.YarnScheduler: Initial job has not accepted any resources; check your cluster UI to ensure that workers are registered and have sufficient resources
+24/02/21 14:42:21 WARN org.apache.spark.scheduler.cluster.YarnScheduler: Initial job has not accepted any resources; check your cluster UI to ensure that workers are registered and have sufficient resources
+24/02/21 14:42:36 WARN org.apache.spark.scheduler.cluster.YarnScheduler: Initial job has not accepted any resources; check your cluster UI to ensure that workers are registered and have sufficient resources
+24/02/21 14:42:51 WARN org.apache.spark.scheduler.cluster.YarnScheduler: Initial job has not accepted any resources; check your cluster UI to ensure that workers are registered and have sufficient resources
+24/02/21 14:43:06 WARN org.apache.spark.scheduler.cluster.YarnScheduler: Initial job has not accepted any resources; check your cluster UI to ensure that workers are registered and have sufficient resources

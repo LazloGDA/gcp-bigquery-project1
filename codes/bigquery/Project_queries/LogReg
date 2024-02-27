@@ -1,0 +1,34 @@
+-- 1. Random train-test split with 70/30 ratio
+CREATE OR REPLACE VIEW flight_status.flight_status_split AS
+SELECT *,
+  CASE WHEN RAND() BETWEEN 0 AND 0.7 THEN 'train' ELSE 'test' END AS split
+FROM `gcp-bigquery-project1.flight_status.flight_status_table`;
+
+-- 2. Model 1 with hyperparameters 
+CREATE OR REPLACE MODEL `flight_status.logistic_model_1`
+OPTIONS(
+  model_type='LOGISTIC_REG',
+  input_label_cols=['Cancelled'],
+  l1_reg=1,
+  l2_reg=1
+) AS
+SELECT * FROM flight_status.flight_status_split WHERE split = 'train';
+
+-- 3. Model 2 with different hyperparameters 
+CREATE OR REPLACE MODEL `flight_status.logistic_model_2`
+OPTIONS(
+  model_type='LOGISTIC_REG',
+  input_label_cols=['Cancelled'],
+  l1_reg=0.5,
+  l2_reg=0.5
+) AS
+SELECT * FROM flight_status.flight_status_split WHERE split = 'train';
+
+-- 4. Evaluate both models on the test set
+SELECT * FROM ML.EVALUATE(MODEL `flight_status.logistic_model_1`, (
+  SELECT * FROM flight_status.flight_status_split WHERE split = 'test'
+));
+
+SELECT * FROM ML.EVALUATE(MODEL `flight_status.logistic_model_2`, (
+  SELECT * FROM flight_status.flight_status_split WHERE split = 'test'
+));

@@ -1,0 +1,27 @@
+-- Model 1
+CREATE OR REPLACE MODEL `flight_status.RF_1`
+OPTIONS(
+    model_type='BOOSTED_TREE_CLASSIFIER',
+    input_label_cols=['Cancelled']
+) AS
+SELECT
+  *
+FROM
+  `gcp-bigquery-project1.flight_status.flight_status_table`;
+
+-- Model 2
+CREATE OR REPLACE MODEL `flight_status.RF_2`
+OPTIONS(
+    model_type='BOOSTED_TREE_CLASSIFIER',
+    input_label_cols=['Cancelled']
+) AS
+SELECT
+  *
+FROM
+  `gcp-bigquery-project1.flight_status.flight_status_table`;
+
+-- Evaluate Model 1
+SELECT * FROM ML.EVALUATE(MODEL `flight_status.RF_1`);
+
+-- Evaluate Model 2
+SELECT * FROM ML.EVALUATE(MODEL `flight_status.RF_2`);

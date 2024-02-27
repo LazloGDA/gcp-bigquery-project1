@@ -1,0 +1,165 @@
++ readonly VM_CONNECTORS_HADOOP_DIR=/usr/lib/hadoop/lib
++ VM_CONNECTORS_HADOOP_DIR=/usr/lib/hadoop/lib
++ readonly VM_CONNECTORS_DATAPROC_DIR=/usr/local/share/google/dataproc/lib
++ VM_CONNECTORS_DATAPROC_DIR=/usr/local/share/google/dataproc/lib
++ declare -A MIN_CONNECTOR_VERSIONS
++ MIN_CONNECTOR_VERSIONS=(["bigquery"]="1.0.0" ["spark-bigquery"]="0.17.0" ["hive-bigquery"]="0.0.0")
++ test -v DATAPROC_IMAGE_VERSION
+++ /usr/share/google/get_metadata_value attributes/bigquery-connector-version
++ readonly BIGQUERY_CONNECTOR_VERSION=1.2.0
++ BIGQUERY_CONNECTOR_VERSION=1.2.0
+++ /usr/share/google/get_metadata_value attributes/spark-bigquery-connector-version
++ readonly SPARK_BIGQUERY_CONNECTOR_VERSION=0.21.0
++ SPARK_BIGQUERY_CONNECTOR_VERSION=0.21.0
+++ /usr/share/google/get_metadata_value attributes/hive-bigquery-connector-version
++ readonly HIVE_BIGQUERY_CONNECTOR_VERSION=2.0.3
++ HIVE_BIGQUERY_CONNECTOR_VERSION=2.0.3
+++ /usr/share/google/get_metadata_value attributes/bigquery-connector-url
+++ true
++ readonly BIGQUERY_CONNECTOR_URL=
++ BIGQUERY_CONNECTOR_URL=
+++ /usr/share/google/get_metadata_value attributes/spark-bigquery-connector-url
+++ true
++ readonly SPARK_BIGQUERY_CONNECTOR_URL=
++ SPARK_BIGQUERY_CONNECTOR_URL=
+++ /usr/share/google/get_metadata_value attributes/hive-bigquery-connector-url
+++ true
++ readonly HIVE_BIGQUERY_CONNECTOR_URL=
++ HIVE_BIGQUERY_CONNECTOR_URL=
++ [[ -z 1.2.0 ]]
++ update_connector bigquery 1.2.0 ''
++ local -r name=bigquery
++ local -r version=1.2.0
++ local -r url=
++ [[ -n 1.2.0 ]]
++ [[ -n '' ]]
++ [[ -n 1.2.0 ]]
++ update_connector_version bigquery 1.2.0
++ local -r name=bigquery
++ local -r version=1.2.0
++ validate_version bigquery 1.2.0
++ local name=bigquery
++ local version=1.2.0
++ local min_valid_version=1.0.0
+++ min_version 1.0.0 1.2.0
+++ echo -e '1.0.0\n1.2.0'
+++ tail -n1
+++ sort -r -t. -n -k1,1 -k2,2 -k3,3
++ [[ 1.0.0 != \1\.\0\.\0 ]]
+++ get_connector_url bigquery 1.2.0
+++ local -r name=bigquery
+++ local -r version=1.2.0
+++ [[ bigquery == spark-bigquery ]]
+++ [[ bigquery == \h\i\v\e\-\b\i\g\q\u\e\r\y ]]
++++ min_version 2.0 2.0
++++ echo -e '2.0\n2.0'
++++ tail -n1
++++ sort -r -t. -n -k1,1 -k2,2 -k3,3
+++ [[ 2.0 == 2.0 ]]
+++ local -r hadoop_version_suffix=hadoop3
+++ local -r jar_name=bigquery-connector-hadoop3-1.2.0.jar
+++ echo gs://hadoop-lib/bigquery/bigquery-connector-hadoop3-1.2.0.jar
++ local -r connector_url=gs://hadoop-lib/bigquery/bigquery-connector-hadoop3-1.2.0.jar
++ update_connector_url bigquery gs://hadoop-lib/bigquery/bigquery-connector-hadoop3-1.2.0.jar
++ local -r name=bigquery
++ local -r url=gs://hadoop-lib/bigquery/bigquery-connector-hadoop3-1.2.0.jar
++ [[ -d /usr/local/share/google/dataproc/lib ]]
++ local vm_connectors_dir=/usr/local/share/google/dataproc/lib
++ [[ bigquery == spark-bigquery ]]
++ [[ bigquery == hive-bigquery ]]
++ local 'pattern=bigquery-connector-*.jar'
++ find /usr/local/share/google/dataproc/lib/ -name 'bigquery-connector-*.jar' -delete
++ gsutil cp -P gs://hadoop-lib/bigquery/bigquery-connector-hadoop3-1.2.0.jar /usr/local/share/google/dataproc/lib/
+Copying gs://hadoop-lib/bigquery/bigquery-connector-hadoop3-1.2.0.jar...
+/ [0 files][    0.0 B/ 16.7 MiB]                                                -- [0 files][ 11.6 MiB/ 16.7 MiB]                                                - [1 files][ 16.7 MiB/ 16.7 MiB]                                                
+Operation completed over 1 objects/16.7 MiB.                                     
++ local -r jar_name=bigquery-connector-hadoop3-1.2.0.jar
++ ln -s -f /usr/local/share/google/dataproc/lib/bigquery-connector-hadoop3-1.2.0.jar /usr/local/share/google/dataproc/lib/bigquery-connector.jar
++ [[ -n '' ]]
++ update_connector spark-bigquery 0.21.0 ''
++ local -r name=spark-bigquery
++ local -r version=0.21.0
++ local -r url=
++ [[ -n 0.21.0 ]]
++ [[ -n '' ]]
++ [[ -n 0.21.0 ]]
++ update_connector_version spark-bigquery 0.21.0
++ local -r name=spark-bigquery
++ local -r version=0.21.0
++ validate_version spark-bigquery 0.21.0
++ local name=spark-bigquery
++ local version=0.21.0
++ local min_valid_version=0.17.0
+++ min_version 0.17.0 0.21.0
+++ echo -e '0.17.0\n0.21.0'
+++ sort -r -t. -n -k1,1 -k2,2 -k3,3
+++ tail -n1
++ [[ 0.17.0 != \0\.\1\7\.\0 ]]
+++ get_connector_url spark-bigquery 0.21.0
+++ local -r name=spark-bigquery
+++ local -r version=0.21.0
+++ [[ spark-bigquery == spark-bigquery ]]
+++ case "${DATAPROC_IMAGE_VERSION}" in
+++ scala_version=2.12
+++ local -r jar_name=spark-bigquery-with-dependencies_2.12-0.21.0.jar
+++ echo gs://spark-lib/bigquery/spark-bigquery-with-dependencies_2.12-0.21.0.jar
+++ return
++ local -r connector_url=gs://spark-lib/bigquery/spark-bigquery-with-dependencies_2.12-0.21.0.jar
++ update_connector_url spark-bigquery gs://spark-lib/bigquery/spark-bigquery-with-dependencies_2.12-0.21.0.jar
++ local -r name=spark-bigquery
++ local -r url=gs://spark-lib/bigquery/spark-bigquery-with-dependencies_2.12-0.21.0.jar
++ [[ -d /usr/local/share/google/dataproc/lib ]]
++ local vm_connectors_dir=/usr/local/share/google/dataproc/lib
++ [[ spark-bigquery == spark-bigquery ]]
++ local 'pattern=spark-bigquery*.jar'
++ find /usr/local/share/google/dataproc/lib/ -name 'spark-bigquery*.jar' -delete
++ gsutil cp -P gs://spark-lib/bigquery/spark-bigquery-with-dependencies_2.12-0.21.0.jar /usr/local/share/google/dataproc/lib/
+Copying gs://spark-lib/bigquery/spark-bigquery-with-dependencies_2.12-0.21.0.jar...
+/ [0 files][    0.0 B/ 39.8 MiB]                                                -- [0 files][ 24.2 MiB/ 39.8 MiB]                                                \\ [1 files][ 39.8 MiB/ 39.8 MiB]                                                
+Operation completed over 1 objects/39.8 MiB.                                     
++ local -r jar_name=spark-bigquery-with-dependencies_2.12-0.21.0.jar
++ ln -s -f /usr/local/share/google/dataproc/lib/spark-bigquery-with-dependencies_2.12-0.21.0.jar /usr/local/share/google/dataproc/lib/spark-bigquery-connector.jar
++ [[ -n '' ]]
++ update_connector hive-bigquery 2.0.3 ''
++ local -r name=hive-bigquery
++ local -r version=2.0.3
++ local -r url=
++ [[ -n 2.0.3 ]]
++ [[ -n '' ]]
++ [[ -n 2.0.3 ]]
++ update_connector_version hive-bigquery 2.0.3
++ local -r name=hive-bigquery
++ local -r version=2.0.3
++ validate_version hive-bigquery 2.0.3
++ local name=hive-bigquery
++ local version=2.0.3
++ local min_valid_version=0.0.0
+++ min_version 0.0.0 2.0.3
+++ echo -e '0.0.0\n2.0.3'
+++ sort -r -t. -n -k1,1 -k2,2 -k3,3
+++ tail -n1
++ [[ 0.0.0 != \0\.\0\.\0 ]]
+++ get_connector_url hive-bigquery 2.0.3
+++ local -r name=hive-bigquery
+++ local -r version=2.0.3
+++ [[ hive-bigquery == spark-bigquery ]]
+++ [[ hive-bigquery == \h\i\v\e\-\b\i\g\q\u\e\r\y ]]
+++ echo gs://hadoop-lib/hive-bigquery/hive-bigquery-connector-2.0.3.jar
+++ return
++ local -r connector_url=gs://hadoop-lib/hive-bigquery/hive-bigquery-connector-2.0.3.jar
++ update_connector_url hive-bigquery gs://hadoop-lib/hive-bigquery/hive-bigquery-connector-2.0.3.jar
++ local -r name=hive-bigquery
++ local -r url=gs://hadoop-lib/hive-bigquery/hive-bigquery-connector-2.0.3.jar
++ [[ -d /usr/local/share/google/dataproc/lib ]]
++ local vm_connectors_dir=/usr/local/share/google/dataproc/lib
++ [[ hive-bigquery == spark-bigquery ]]
++ [[ hive-bigquery == hive-bigquery ]]
++ local 'pattern=hive-bigquery*.jar'
++ find /usr/local/share/google/dataproc/lib/ -name 'hive-bigquery*.jar' -delete
++ gsutil cp -P gs://hadoop-lib/hive-bigquery/hive-bigquery-connector-2.0.3.jar /usr/local/share/google/dataproc/lib/
+Copying gs://hadoop-lib/hive-bigquery/hive-bigquery-connector-2.0.3.jar...
+/ [0 files][    0.0 B/ 38.3 MiB]                                                -- [0 files][  9.5 MiB/ 38.3 MiB]                                                \|| [0 files][ 31.2 MiB/ 38.3 MiB]                                                | [1 files][ 38.3 MiB/ 38.3 MiB]                                                
+Operation completed over 1 objects/38.3 MiB.                                     
++ local -r jar_name=hive-bigquery-connector-2.0.3.jar
++ ln -s -f /usr/local/share/google/dataproc/lib/hive-bigquery-connector-2.0.3.jar /usr/local/share/google/dataproc/lib/hive-bigquery-connector.jar
++ [[ -n '' ]]

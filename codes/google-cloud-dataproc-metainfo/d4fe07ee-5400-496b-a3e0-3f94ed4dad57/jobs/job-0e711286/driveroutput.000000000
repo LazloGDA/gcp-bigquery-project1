@@ -1,0 +1,21 @@
+Warning: Ignoring non-Spark config property: enableAdvancedOptimizations
+Warning: Ignoring non-Spark config property: enableCaching
+Warning: Ignoring non-Spark config property: enableAdvancedExecutionLayer
+24/02/21 16:39:02 INFO org.apache.spark.SparkEnv: Registering MapOutputTracker
+24/02/21 16:39:02 INFO org.apache.spark.SparkEnv: Registering BlockManagerMaster
+24/02/21 16:39:02 INFO org.apache.spark.SparkEnv: Registering BlockManagerMasterHeartbeat
+24/02/21 16:39:03 INFO org.apache.spark.SparkEnv: Registering OutputCommitCoordinator
+24/02/21 16:39:03 INFO org.sparkproject.jetty.util.log: Logging initialized @11624ms to org.sparkproject.jetty.util.log.Slf4jLog
+24/02/21 16:39:03 INFO org.sparkproject.jetty.server.Server: jetty-9.4.40.v20210413; built: 2021-04-13T20:42:42.668Z; git: b881a572662e1943a14ae12e7e1207989f218b74; jvm 1.8.0_402-b06
+24/02/21 16:39:03 INFO org.sparkproject.jetty.server.Server: Started @11875ms
+24/02/21 16:39:03 INFO org.sparkproject.jetty.server.AbstractConnector: Started ServerConnector@771dadec{HTTP/1.1, (http/1.1)}{0.0.0.0:46813}
+24/02/21 16:39:04 INFO org.apache.hadoop.yarn.client.RMProxy: Connecting to ResourceManager at project1-cluster-m/10.156.0.10:8032
+24/02/21 16:39:05 INFO org.apache.hadoop.yarn.client.AHSProxy: Connecting to Application History server at project1-cluster-m/10.156.0.10:10200
+24/02/21 16:39:06 INFO org.apache.hadoop.conf.Configuration: resource-types.xml not found
+24/02/21 16:39:06 INFO org.apache.hadoop.yarn.util.resource.ResourceUtils: Unable to find 'resource-types.xml'.
+24/02/21 16:39:07 INFO org.apache.hadoop.yarn.client.api.impl.YarnClientImpl: Submitted application application_1708531161196_0004
+24/02/21 16:39:08 INFO org.apache.hadoop.yarn.client.RMProxy: Connecting to ResourceManager at project1-cluster-m/10.156.0.10:8030
+24/02/21 16:39:11 INFO com.google.cloud.hadoop.fs.gcs.GhfsStorageStatistics: Detected potential high latency for operation op_get_file_status. latencyMs=295; previousMaxLatencyMs=0; operationCount=1; context=gs://dataproc-temp-europe-west3-671384469824-mghpndlt/d4fe07ee-5400-496b-a3e0-3f94ed4dad57/spark-job-history
+24/02/21 16:39:11 INFO com.google.cloud.hadoop.repackaged.gcs.com.google.cloud.hadoop.gcsio.GoogleCloudStorageImpl: Ignoring exception of type GoogleJsonResponseException; verified object already exists with desired state.
+24/02/21 16:39:11 INFO com.google.cloud.hadoop.fs.gcs.GhfsStorageStatistics: Detected potential high latency for operation op_mkdirs. latencyMs=170; previousMaxLatencyMs=0; operationCount=1; context=gs://dataproc-temp-europe-west3-671384469824-mghpndlt/d4fe07ee-5400-496b-a3e0-3f94ed4dad57/spark-job-history
+24/02/21 16:39:15 INFO org.sparkproject.jetty.server.AbstractConnector: Stopped Spark@771dadec{HTTP/1.1, (http/1.1)}{0.0.0.0:0}
